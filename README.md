@@ -22,12 +22,22 @@ A simple Python command-line tool to convert JSON files to CSV format.
    cd python-cli-json-to-csv
    ```
 ## Usage
+### 1. Run the following command
 To convert a JSON file to CSV, run the following command:
 
 ```bash
 python convert_json_to_csv.py input_file_path output_directory
 ```
 Replace input_file_path with your own input_file_path and output_directory with your own output_directory.
+
+### Json File Format
+```json
+[
+    {"name": "Alice", "age": 25, "city": "New York"},
+    {"name": "Bob", "age": 33, "city": "Los Angeles"},
+    {"name": "Charlie", "age": 35, "city": "Chicago"}
+]
+```
 
 ## Google Slide Link
 https://docs.google.com/presentation/d/1Nh_HS8SEopOxoTXvAIY0q210tlMASRMbBO6qoQU_aLw/edit?usp=sharing
