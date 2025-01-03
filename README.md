@@ -30,7 +30,7 @@ python convert_json_to_csv.py input_file_path output_directory
 ```
 Replace input_file_path with your own input_file_path and output_directory with your own output_directory.
 
-### Json File Format
+### 2. Json File Format
 ```json
 [
     {"name": "Alice", "age": 25, "city": "New York"},
