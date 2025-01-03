@@ -45,4 +45,4 @@ Replace input_file_path with your own input_file_path and output_directory with 
 - [Handling file path using os.path module in Python](https://www.geeksforgeeks.org/argparse-python-command-line-options/)
 
 ## Google Slide Link
-https://docs.google.com/presentation/d/1Nh_HS8SEopOxoTXvAIY0q210tlMASRMbBO6qoQU_aLw/edit?usp=sharing
+[Click to see presentation slide](https://docs.google.com/presentation/d/1Nh_HS8SEopOxoTXvAIY0q210tlMASRMbBO6qoQU_aLw/edit?usp=sharing)
