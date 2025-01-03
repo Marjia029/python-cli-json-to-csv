@@ -3,7 +3,7 @@ import json
 import csv
 import os
 
-def json_to_csv(input_file):
+def json_to_csv(input_file, output_file_path):
     # Check if the input file exists
     if not os.path.exists(input_file):
         print(f"Error: The file '{input_file}' does not exist.")
@@ -26,21 +26,30 @@ def json_to_csv(input_file):
     if not isinstance(data, list) or not all(isinstance(item, dict) for item in data):
         print("Error: JSON data must be a list of dictionaries.")
         return
+    
+    if not os.path.exists(output_file_path):
+        os.makedirs(output_file_path)
 
     # Get the output CSV file path
-    output_file = os.path.splitext(input_file)[0]+'_output' + '.csv'
+    input_file_name=os.path.basename(input_file).split('/')[-1]
+    print(input_file_name)
+    output_file_name = os.path.splitext(input_file_name)[0]+'_output' + '.csv'
+    print(output_file_name)
+
+    output_file_path=os.path.join(output_file_path, output_file_name)
 
     # Write to the CSV file
-    with open(output_file, 'w', newline='') as csv_file:
+    with open(output_file_path, 'w', newline='') as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=data[0].keys())
         writer.writeheader()
         writer.writerows(data)
 
-    print(f"CSV file created successfully: {output_file}")
+    print(f"CSV file created successfully: {output_file_path}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert a JSON file to a CSV file.")
     parser.add_argument("input_file", help="Path to the input JSON file")
+    parser.add_argument('output_file_path', help='Path to the output directory')
     args = parser.parse_args()
 
-    json_to_csv(args.input_file)
+    json_to_csv(args.input_file, args.output_file_path)
