@@ -4,7 +4,7 @@ import csv
 import os
 
 def convert_json_to_csv(input_file_path, output_file_path):
-    # Check if the input file exists
+    # Check if the input file path exists
     if not os.path.exists(input_file_path):
         print(f"Error: The file '{input_file_path}' does not exist.")
         return
@@ -26,11 +26,10 @@ def convert_json_to_csv(input_file_path, output_file_path):
     if not os.path.exists(output_file_path):
         os.makedirs(output_file_path)
 
-    # Creating output file
+    # Creating output file path
     input_file_name=os.path.basename(input_file_path).split('/')[-1]
-    #print(input_file_name)
+
     output_file_name = os.path.splitext(input_file_name)[0]+'_output' + '.csv'
-    #print(output_file_name)
 
     output_file_path=os.path.join(output_file_path, output_file_name)
 
