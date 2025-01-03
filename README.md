@@ -28,3 +28,6 @@ To convert a JSON file to CSV, run the following command:
 python convert_json_to_csv.py input_file_path output_directory
 ```
 Replace input_file_path with your own input_file_path and output_directory with your own output_directory.
+
+## Google Slide Link
+https://docs.google.com/presentation/d/1Nh_HS8SEopOxoTXvAIY0q210tlMASRMbBO6qoQU_aLw/edit?usp=sharing
