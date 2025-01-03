@@ -39,5 +39,10 @@ Replace input_file_path with your own input_file_path and output_directory with 
 ]
 ```
 
+## Resources
+- [CLI tool using argparse](https://www.qodo.ai/blog/creating-powerful-command-line-tools-in-python-a-practical-guide/)
+- [Json to CSV using python](https://learnpython.com/blog/python-json-to-csv/)
+- [Handling file path using os.path module in Python](https://www.geeksforgeeks.org/argparse-python-command-line-options/)
+
 ## Google Slide Link
 https://docs.google.com/presentation/d/1Nh_HS8SEopOxoTXvAIY0q210tlMASRMbBO6qoQU_aLw/edit?usp=sharing
